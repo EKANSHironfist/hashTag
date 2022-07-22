@@ -1,3 +1,9 @@
+ /*  */
+ 
+ *{
+  margin: 0;            /*help to terminate the 10 uint margin that react gives us by default  */       
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

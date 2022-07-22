@@ -1,0 +1,28 @@
+.sidebarOption{
+    display: flex;                /*will display icon and there text side by side*/
+    align-items: center;         /*to align the items perfectly*/
+
+    cursor: pointer;              /*turns the cursor to pointer on hover*/
+}
+
+
+
+.sidebarOption:hover{
+    background-color: #e8f5fe;    /*give background color of icons and text as light blue*/
+    border-radius: 30px;
+
+    color:var(--twitter-color);       /*give color of text and icon as blue on hover*/
+    transition: color 100ms ease-out;
+}
+
+/*  css to material ui elements */
+
+.sidebarOption>.MuiSvgIcon-root{    /* inside  sidebarOption if you find a class i.e .MuiSvgIcon-root*/
+    padding: 20px;         /*give padding to the icons*/
+}
+
+.sidebarOption> h2{
+     font-weight: 800;
+    font-size: 20px;
+    margin-right:20px; 
+}

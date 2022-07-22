@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,10 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+body{
+  --twitter-color:#50b7f5;
+  --twitter-background: #e6ecf0;
+  
 }
