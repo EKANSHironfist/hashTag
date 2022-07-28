@@ -1,0 +1,34 @@
+.feed{
+    flex: 0.4;
+    border-right: 2px solid var(--twitter-background);
+    min-width: fit-content;      /*what ever size the post is ,te should fit the min width*/
+    overflow-y: scroll;
+}
+
+.feed__header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;  /*shows on top*/
+    border:2px solid var(--twitter-background) ;
+    padding: 15px 20px;   
+
+}
+
+.feed__header>h2{
+    font-size: 20px;
+    font-weight: 800;
+   
+}
+
+/* hide scollbar for chrome ,safari and opera */
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+/* hide scollbar for IE ,edge and Firefox */
+.feed{
+    -ms-overflow-style: none; /*IE and edge*/
+    scrollbar-width: none;   /*firefox*/
+}
+

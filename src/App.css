@@ -42,3 +42,12 @@ body{
   --twitter-background: #e6ecf0;
   
 }
+
+.app{
+  display: flex;
+  height:100vh ;    /*sidebar border stretches to the bottom*/
+  max-width:1300px; /*maximum width of the main screen*/
+  margin-left: auto;   /*this margin left and right auto will take there side share of space and eventually center the element */
+  margin-right: auto;
+  padding:0 10px;
+} 

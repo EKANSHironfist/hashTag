@@ -10,6 +10,7 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { Button } from '@mui/material';
 function Sidebar()
 {
    return (
@@ -17,9 +18,9 @@ function Sidebar()
     <div className="sidebar">
         {/* Twitter icon */}
           {/* using twitter icon from material ui */}
-          <TwitterIcon/>                 {/*way to use the twitter icon */}              
+          <TwitterIcon className="sidebar__twitterIcon"/>                 {/*way to use the twitter icon */}              
            
-           <SidebarOption Icon={HomeIcon} text="Home"/>      {/* this will let us use SidebarOption.js*/}
+           <SidebarOption active Icon={HomeIcon} text="Home"/>      {/* this will let us use SidebarOption.js*/}
            <SidebarOption Icon={SearchIcon} text="Search"/> 
            <SidebarOption Icon={NotificationsIcon} text="Notification"/>        
            <SidebarOption Icon={MailOutlineIcon} text="Mail"/>
@@ -27,19 +28,9 @@ function Sidebar()
            <SidebarOption Icon={ListAltIcon} text="List"/>
            <SidebarOption Icon={PersonOutlineIcon} text="Profile"/>
            <SidebarOption Icon={MoreHorizIcon} text="More"/>
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
-        {/* SidebarOption */}
+           
+           {/* button-> Tweet */}
+           <Button variant="outlined" className="sidebar__tweet"  fullWidth>Tweet</Button>            {/*variant mean design of that button*/}
     </div>
 
    )
